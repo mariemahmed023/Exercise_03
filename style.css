@@ -11,13 +11,11 @@ body{
     background-size: cover;
     
 }
-
 h1{
-    color: #fff;
-    text-align: center;
     background-color: #09c;
+    text-align: center;
+    color: #fff;
 }
-
 .member{  
      background-color:#09c;
      width: 300px;
@@ -112,12 +110,12 @@ h1{
 .container2 .box img{
     width: 100%;
 }
-
 .container2 .box:hover .back{
     transform: rotateY(0);
 }
+
 .container2 .box .back{
-    background-color:#678888;
+    background-color:#fff;
     position: absolute;
     top: 0;
     left: 0;
@@ -133,6 +131,18 @@ h1{
     overflow: hidden;
 }
 
+.container2 .box .back:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: #2a3f55b3;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .container2 .box:hover .back h2{
     transition-delay: 4s;
@@ -145,12 +155,12 @@ h1{
 }
 
 .container2 .box .back h2{
-    background-color: #2a3f55;
+    background-color: #678888;
     width: 100%;
 }
 .container2 .box .back h2,
 .container2 .box .back p{
-    width: 90%;
+    width: 100%;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -158,6 +168,7 @@ h1{
     left: 100%;
     z-index: 5;
     margin-bottom: 20px;
+    background-color: #678888;
 }
 
 
