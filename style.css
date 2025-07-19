@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-body{
+.main{
     background-image: url(images/bg3-8907ec01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+     height: 100vh;
 }
+
 h1{
     background-color: #09c;
     text-align: center;
@@ -19,10 +20,10 @@ h1{
 .member{  
      background-color:#09c;
      width: 300px;
-     height: 300px;
      margin: 50px auto;
      position: relative;
      overflow: hidden;
+    
 }
 
 .member img{
@@ -76,6 +77,14 @@ h1{
 .member:hover .layout h2,
 .member:hover .layout p{
     transform: translateX(0%);
+}
+
+.main2{
+    background-image: url(images/bg3-8907ec01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     height: 100vh;
 }
 
 .container2{
@@ -137,25 +146,40 @@ h1{
     left: 50%;
     content: "";
     display: block;
-    width: 0px;
-    height: 0px;
+    width: 0%;
+    height: 0%;
     background-color: #2a3f55b3;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    transition-duration: 2s;
+    z-index: -2;
 }
 
+.container2 .box:hover .back:after{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
 .container2 .box:hover .back h2{
     transition-delay: 4s;
 }
-.container2 .box:hover .back h2,
-.container2 .box:hover .back p{
+
+.container2 .box:hover .back p,
+.container2 .box:hover .back h2{
     transition-duration: 2s;
-    transition-delay: 5s;
     left: 0;
 }
 
+.container2 .box .back p{
+    transition-delay: 5s;
+     padding-left: 30px;
+    padding-right: 30px;
+    width: 90%;
+    padding: 10px 0;
+}
+
 .container2 .box .back h2{
-    background-color: #678888;
+    background-color: #2A3F55;
     width: 100%;
 }
 .container2 .box .back h2,
@@ -168,8 +192,19 @@ h1{
     left: 100%;
     z-index: 5;
     margin-bottom: 20px;
-    background-color: #678888;
 }
+
+.main2 .container2 .box .back h3{
+    color: #00ff00;
+}
+
+
+
+
+
+
+
+
 
 
 
