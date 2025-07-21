@@ -194,9 +194,82 @@ h1{
     margin-bottom: 20px;
 }
 
-.main2 .container2 .box .back h3{
+.main2 .container2 .box .back h3 {
+    position: relative;
+    transform: scale(0);
+    z-index: 5 ;
     color: #00ff00;
 }
+.main2 .container2 .box:hover h3 {
+    transition-duration: 1s;
+    transition-delay: 7s;
+    transform: scale(1);
+}
+
+.main2 .container2 .box .back .parent {
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main2 .container2 .box .back .parent .child {
+    transform: scale(0);
+    position: relative;
+    z-index: 5;
+    margin: 10px;
+}
+
+.main2 .container2 .box .back .parent .child p {
+    background-color: #0f0;
+}
+
+.main2 .container2 .box .back .parent .child p{
+    width: 90%;
+    position: relative;
+    left: 100%;
+    z-index: 5;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main2 .container2 .box .back .parent .child p{
+     width: 100%;
+     left: 100%;
+    
+}
+
+.main2 .container2 .box:hover .back .parent :nth-of-type(1){
+    transition-duration: 1s;
+    transition-delay: 8s;
+    transform: scale(1);
+    left: 0;
+}
+.main2 .container2 .box:hover .back .parent :nth-of-type(2){
+    transition-duration: 2s;
+    transition-delay: 8.5s;
+    transform: scale(1);
+    left: 0;
+}
+
+
+.main2 .container2 .box:hover .back .parent :nth-of-type(3){
+    transition-duration: 3s;
+    transition-delay: 9s;
+    transform: scale(1);
+    left: 0;
+}
+
+.main2 .container2 .box:hover .back .parent :nth-of-type(4){
+    transition-duration: 4s;
+    transition-delay: 10s;
+    transform: scale(1);
+    left: 0;
+}
+
+
 
 
 
